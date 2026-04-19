@@ -1,0 +1,19 @@
+# Ignorer les bibliothèques PHP
+**/vendor/
+
+# Ignorer les bibliothèques JavaScript (Mobile)
+**/node_modules/
+
+# Ignorer les fichiers de configuration sensibles
+.env
+config/db_config.php
+
+# Ignorer les fichiers envoyés par les utilisateurs (images de test)
+/vente_entre_particuliers/uploads/
+
+# Ignorer les logs
+*.log
+
+/vente_entre_particuliers/vendor/
+
+vente_entre_particuliers/config/stripe.php
