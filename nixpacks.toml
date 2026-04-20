@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['php82', 'apache']
+nixPkgs = ['php82', 'php82Extensions.pdo_mysql', 'apache']
 
 [start]
 cmd = 'apachectl -D FOREGROUND'
