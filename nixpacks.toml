@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['php82', 'php82Extensions.pdo_mysql', 'apache']
+nixPkgs = ["php82", "php82Extensions.pdo_mysql"]
 
 [start]
-cmd = 'apachectl -D FOREGROUND'
+cmd = "php -S 0.0.0.0:$PORT -t vente_entre_particuliers"
