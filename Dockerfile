@@ -27,3 +27,11 @@ AllowOverride All\n\
 Require all granted\n\
 </Directory>\n' > /etc/apache2/conf-available/app.conf \
     && a2enconf app
+
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+EXPOSE 80
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["apache2-foreground"]
