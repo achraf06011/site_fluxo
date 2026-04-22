@@ -4,6 +4,6 @@
 
 :{$PORT} {
     root * /app/vente_entre_particuliers
-    php_fastcgi unix//run/php-fpm.sock
+    php_server
     file_server
 }
