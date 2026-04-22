@@ -1,8 +1,0 @@
-{
-    auto_https off
-}
-
-:{$PORT} {
-    root * /app/vente_entre_particuliers
-    file_server
-}
