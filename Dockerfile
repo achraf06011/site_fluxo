@@ -19,4 +19,4 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 EXPOSE 8080
 
-CMD sh -c "php -S 0.0.0.0:${PORT:-8080} -t /app/vente_entre_particuliers"
+CMD php -S 0.0.0.0:$PORT -t /app/vente_entre_particuliers
