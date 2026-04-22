@@ -4,5 +4,5 @@
 
 :{$PORT} {
     root * /app/vente_entre_particuliers
-    php_server
+    file_server
 }
